@@ -16,11 +16,11 @@ void error(const char *message){
     perror(message);
     exit(1);
 }
-int connect(char* buff, ) {
+int cnnct_sock(char* buff ) {
 // receive wrqrrq
 
     
-    sizeof(buff)
+    //sizeof(buff)
 
 // begin write
 
@@ -32,10 +32,10 @@ int connect(char* buff, ) {
 return 0; // succeed
 }
 
-int read() {
-    while (!SocketFileDescriptor)
+int readFile() {
+    // while (!SocketFileDescriptor)
     // send data
-    {} 
+    // {} 
     // receive ack
     
     
@@ -45,7 +45,7 @@ return 0;
 
 
 
-int write () {
+int writeFile () {
 
 return 0;
 }

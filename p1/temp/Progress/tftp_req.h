@@ -14,7 +14,8 @@ struct IP_header {
     uint16_t length;
     uint16_t checksum;
 
-}; struct IP_header IP_default = {69,NULL,NULL,NULL};
+};
+// const struct IP_header IP_default = {69,NULL,NULL,NULL};
 
 
 
@@ -27,7 +28,8 @@ struct WRQ_packet {
     uint8_t empty;
     char* mode;
     uint8_t empty2;
-}; struct WRQ_packet WRQ_default = {IP_default, 2,NULL, 0,"NETASCII" , 0};
+};
+// struct WRQ_packet WRQ_default = {NULL, 2,NULL, 0,"NETASCII" , 0};
 
 struct RRQ_packet {
 
@@ -39,7 +41,8 @@ struct RRQ_packet {
     char* mode;
     uint8_t empty2;
 
-}; struct RRQ_packet RRQ_default = {IP_default, 2,NULL, 0,"NETASCII" , 0};
+};
+// struct RRQ_packet RRQ_default = {NULL, 2,NULL, 0,"NETASCII" , 0};
 
 
 

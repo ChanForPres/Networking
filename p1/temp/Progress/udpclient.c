@@ -18,11 +18,11 @@ void error(const char *message){
     exit(0);
 }
 
-int connect () {
+int  cnnct_sock(char* buff ) {
 
 
 }
-int write() {
+int writeFile() {
 // send wrq to port 69
 
 
@@ -33,7 +33,7 @@ int write() {
 }
 
 
-int read() {
+int readFile() {
 
 
 }
