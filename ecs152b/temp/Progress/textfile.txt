@@ -1,0 +1,10 @@
+TFTP does not have a method to list the contents of a directory, so your TFTP server will
+add this capability without the need to modify the communication protocol. Since the
+question mark is an invalid filename character in most file systems, it will be used to
+request the listing of the directory. Any request to read a filename that starts with a
+question mark will result in the directory listing being returned. A filename of “?” will
+return the listing for the root directory of the TFTP server. The format of the listing
+should be as follows: one file or directory name per line. File lines should have the
+filename terminated with a ‘|’ character; this should be followed by the size of the file in
+decimal. Directory lines should terminate the directory name with ‘/’ character. The
+ordering of the filenames in the listing is unspecified.
