@@ -18,27 +18,7 @@ void error(const char *message){
     exit(0);
 }
 
-int  cnnct_sock(char* buff ) {
-
-
-}
-int writeFile() {
-// send wrq to port 69
-
-
-// receive ack
-// begin send
-// send fail
-
-}
-
-
-int readFile() {
-
-
-}
-
-int main(int argc, char *argv[]){
+int  cnnct_sock(int argc, char** argv) {
     int SocketFileDescriptor, PortNumber, Result;
     socklen_t ServerLength;
     struct sockaddr_in ServerAddress;
@@ -91,5 +71,29 @@ int main(int argc, char *argv[]){
     Buffer[Result] = '\0';
     printf("%s\n",Buffer);    
     close(SocketFileDescriptor);
+ 
+return 0; // success 
+}
+int writeFile() {
+// send wrq to port 69
+
+
+// receive ack
+// begin send
+// send fail
+
+return 0; // success 
+}
+
+
+int readFile() {
+
+
+return 0; // success 
+}
+
+int main(int argc, char *argv[]){
+    cnnct_sock( argc,  argv);
+    
     return 0;
 }

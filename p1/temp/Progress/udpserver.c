@@ -16,41 +16,10 @@ void error(const char *message){
     perror(message);
     exit(1);
 }
-int cnnct_sock(char* buff ) {
-// receive wrqrrq
+int cnnct_sock(int argc, char** argv ) {
 
     
-    //sizeof(buff)
-
-// begin write
-
-// send ack
-
-
-
-// begin read
-return 0; // succeed
-}
-
-int readFile() {
-    // while (!SocketFileDescriptor)
-    // send data
-    // {} 
-    // receive ack
-    
-    
-return 0;
-
-}
-
-
-
-int writeFile () {
-
-return 0;
-}
-
-int main(int argc, char *argv[]){
+     
     int SocketFileDescriptor, NewSocketFileDescriptor, PortNumber;
     socklen_t ClientLength;
     char Buffer[BUFFER_SIZE];
@@ -96,5 +65,43 @@ int main(int argc, char *argv[]){
         error("ERROR sending to client");
     }
     close(SocketFileDescriptor);
+ 
+    
+    
+    
+    
+    // receive wrqrrq
+
+    
+    //sizeof(buff)
+
+// begin write
+
+// send ack
+
+
+
+// begin read
+return 0; // succeed
+}
+
+int readFile() {
+    // while (!SocketFileDescriptor)
+    // send data
+    // {} 
+    // receive ack
+   return 0;
+
+}
+
+
+
+int writeFile () {
+
+return 0;
+}
+
+int main(int argc, char *argv[]){
+    cnnct_sock(argc,argv);
     return 0; 
 }
